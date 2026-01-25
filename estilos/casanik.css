@@ -22,11 +22,12 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    border: 20px solid rgb(216, 144, 36);
+    border: 20px solid #1F7B00;
 }
 
 .casanik {
     color: white;
+    margin: auto;
 }
 
 #um {
@@ -35,4 +36,23 @@ h1 {
 
 #tres {
     margin-right: 100px;
+}
+
+#botao {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    border: none;
+    background-image: url(../imagem/background-lucky.jpg);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#botao:hover {
+    box-shadow: 2px 2px 50px rgba(19, 131, 68, 0.856);
+    transition: 0.5s ease-in-out;
 }
