@@ -28,6 +28,7 @@ h1 {
 .casanik {
     color: white;
     margin: auto;
+    font-size: 40px;
 }
 
 #um {
@@ -55,4 +56,12 @@ h1 {
 #botao:hover {
     box-shadow: 2px 2px 50px rgba(19, 131, 68, 0.856);
     transition: 0.5s ease-in-out;
+}
+
+#res {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, 1200%);
+    font-size: 22px;
 }
