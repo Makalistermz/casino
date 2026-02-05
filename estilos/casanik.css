@@ -9,9 +9,40 @@ h1 {
     text-align: center;
     font-size: 3rem;
     margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#container-casanik {
+body {
+    background-image: url(../imagem/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+}
+
+#conteiner-saldo {
+    display: flex;
+    background-color: #305715;
+    margin: 10px 10px 0px 0px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 90px;
+}
+
+#conteiner-saldo > img {
+    height: 40px;
+    margin: -10px;
+    padding: 2px;
+}
+
+#conteiner-saldo > p {
+    padding: 2px;
+}
+
+#conteiner-casanik {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +52,7 @@ h1 {
 #container {
     width: 800px;
     height: 400px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between; /*mudar depois que tiiver imagem*/
     border-radius: 20px;
@@ -67,4 +98,6 @@ h1 {
     left: 50%;
     transform: translate(-46%, 900%);
     font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }

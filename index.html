@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="estilos/casanik.css">
 </head>
 <body>
-    <h1>Primeiro Casanik</h1>
+    <header>
+        <div id="conteiner-saldo">
+            <img src="imagem/coin.png" alt="coin">
+            <p id="saldo">R$</p>
+        </div>
+    </header>
+    <h1>Jogo da Sorte</h1>
 
-    <div id="container-casanik">
+    <div id="conteiner-casanik">
         <div id="container">
             <div class="casanik" id="um"></div>
             <div class="casanik" id="dois"></div>
@@ -20,6 +26,16 @@
     <button id="botao" onclick="girar()">Girar</button>
 
     <p id="res"></p>
+
+    <div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
