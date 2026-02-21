@@ -107,12 +107,24 @@ header {
 
 .tabela-container {
     display: flex;
-    flex-flow: row nowrap;
-    background-color: #365f19;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     width: 400px;
     height: 334px;
+    background-color: #365f19;
+    border-radius: 20px 20px 0px 0px;
+    margin-left:20px;
 }
 
 .tabela {
-    
+    align-self: auto;
+}
+
+.title-table {
+    text-align: center;
+    font-size: 3em;
+}
+
+.points {
+    font-size: 28px;
 }
