@@ -5,6 +5,35 @@
     margin: 0px;
 }
 
+@keyframes pulsar {
+    0% {
+        width: 200px;
+        height: 35px;
+    }
+
+    50% {
+        width: 205px;
+        height: 37px;
+    }
+
+    100% {
+        width: 210px;
+        height: 40px;
+    }
+}
+
+@keyframes diminuir {
+    0% {
+        width: 1500px;
+        height: 800px;
+    }
+
+    100% {
+        width: 1000px;
+        height: 600px;
+    }
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -103,6 +132,70 @@ header {
     font-size: 22px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.escondido {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: #323B24;
+    border-radius: 30px;
+    color: #b19d08;
+
+    animation: diminuir 1.5s linear 1;
+
+    h2 {
+        text-align: center;
+        font-size: 4em;
+        margin: 30px;
+    }
+
+    .container-escondido {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 10px;
+        font-size: 24px;
+        height: 400px;
+
+        #adicionar {
+            font-size: 1.9em;
+            margin-bottom: 20px;
+        }
+
+        #add-saldo {
+            width: 200px;
+            height: 35px;
+            font-size: 19px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
+
+            animation: pulsar 2s linear infinite;
+        }
+
+        #add-btn {
+            width: 180px;
+            height: 50px;
+            margin-top: 40px;
+            border: none;
+            border-radius: 50px;
+            background-color: #A1C635;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+            cursor: pointer;
+
+            &:hover {
+                width: 190px;
+                height: 55px;
+            }
+        }
+    }
 }
 
 .tabela-container {
