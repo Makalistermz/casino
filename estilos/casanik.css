@@ -180,7 +180,7 @@ header {
             animation: pulsar 2s linear infinite;
         }
 
-        #add-btn {
+        .btn-add {
             width: 180px;
             height: 50px;
             margin-top: 40px;

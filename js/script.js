@@ -34,3 +34,34 @@ function girar() {
     }
 
 }
+
+let naoAad = document.querySelector('#naoadd-btn');
+
+naoAad.addEventListener('click', function() {
+    let escondido = document.querySelector('.escondido');
+
+    if (escondido.style.display = 'block') {
+        escondido.style.display = 'none'
+    } else {
+        escondido.style.display = 'block'
+    }
+})
+
+let btnadd = document.getElementById('add-btn')
+const addsaldo = document.getElementById('add-saldo');
+
+let adicionar = Number(addsaldo.value);
+
+btnadd.addEventListener('click', function() {
+    let escondido = document.querySelector('.escondido');
+
+    if (adicionar <= 0) {
+    alert('Não á valor!');
+    }
+
+    if (escondido.style.display = 'block') {
+        escondido.style.display = 'none'
+    } else {
+        escondido.style.display = 'block'
+    }
+})
