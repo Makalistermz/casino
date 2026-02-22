@@ -40,7 +40,7 @@ let naoAad = document.querySelector('#naoadd-btn');
 naoAad.addEventListener('click', function() {
     let escondido = document.querySelector('.escondido');
 
-    if (escondido.style.display = 'block') {
+    if (escondido.style.display === 'block') {
         escondido.style.display = 'none'
     } else {
         escondido.style.display = 'block'
@@ -50,18 +50,41 @@ naoAad.addEventListener('click', function() {
 let btnadd = document.getElementById('add-btn')
 const addsaldo = document.getElementById('add-saldo');
 
-let adicionar = Number(addsaldo.value);
 
 btnadd.addEventListener('click', function() {
+
+    let adicionar = Number(addsaldo.value);
     let escondido = document.querySelector('.escondido');
+    let saldo = document.querySelector('#saldo');
+    let saldoAtual = Number(saldo.textContent);
 
-    if (adicionar <= 0) {
-    alert('Não á valor!');
-    }
+    if (addsaldo.value.trim() !== '') {
 
-    if (escondido.style.display = 'block') {
-        escondido.style.display = 'none'
+        if (escondido.style.display === 'block') {
+            escondido.style.display = 'none'
+        } else {
+            escondido.style.display = 'block'
+        } 
+        } else {
+            alert('Não á valor!');
+            return;
+        }
+
+    if (adicionar > 0) {
+        if (escondido.style.display === 'block') {
+            escondido.style.display = 'none'
+        } else {
+            escondido.style.display = 'block'
+        }
     } else {
-        escondido.style.display = 'block'
+        alert('Digite um número positivo!');
+        return;
     }
+
+    saldoAtual += adicionar;
+
+    saldo.textContent = saldoAtual
+
+    addsaldo.value = '';
 })
+
