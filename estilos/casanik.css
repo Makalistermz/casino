@@ -154,6 +154,10 @@ header {
         margin: 30px;
     }
 
+    p {
+        text-align: center;
+    }
+
     .container-escondido {
         display: flex;
         justify-content: flex-start;
